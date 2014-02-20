@@ -32,7 +32,7 @@ function registerPushwooshIOS() {
 				pushNotification.setApplicationIconBadgeNumber(0);
 			  });
 
-	pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"8E590-75D94", appname:"Pushwoosh"},
+	pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"8E590-75D94", appname:"push"},
 									function(status) {
 										var deviceToken = status['deviceToken'];
 										console.warn('registerDevice: ' + deviceToken);
